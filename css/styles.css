@@ -1,0 +1,196 @@
+body {
+  font-family: "Montserrat";
+
+  }
+
+
+  /* Navigation bar */
+  nav-bar {
+    padding: 0 0 4.5rem;
+  }
+
+  .nav-brand {
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin: 0 0 0 13px;
+  }
+
+  /* Download buttons */
+  .download-button {
+    margin: 5% 3% 5% 0;
+
+  }
+  #title {
+  background-color: #ff4c68;
+  color: #ffffff;
+  /* position: relative;
+  z-index: -1; */
+
+  }
+
+  /* I used a z-index of -1 and a relative postion to make this parent element come below the title-img (child) */
+/* In the natural flow of things, the image already lies above because it's a child of the #title section so giving it the z-index/position or not doesn't affect it.  */
+/* Title image */
+
+.title-img {
+  transform: rotate(25deg);
+  width: 23%;
+  position: absolute;
+  z-index: 0;
+  right: 24%;
+}
+/* I used a z-index of 0 and absolute position (this distorted the image:took it out of the stack/natural flow of  and made part of it slide into the features section) to make this child element remain on top. Its parent has position relative already, hence absolute for it. */
+
+.row {
+  margin: 50px 0 0;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+
+/* Features */
+
+#features {
+  padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* I used a z-index of 1 and relative position to make this section come on-top inorder for the part of the image that slid into it to stay below. */
+.features-icon {
+  text-align: center;
+  padding: 5%;
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4668;
+
+}
+
+/* Testimonials section */
+#testimonials {
+
+  text-align: center;
+  background-color: #ef8172;
+  color: #ffffff;
+}
+
+.testimonial-img {
+  border-radius: 100%;
+  width: 20%;
+  margin: 5%;
+}
+.carousel-item {
+  padding: 7% 15%;
+
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.press-img {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing section */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+
+}
+
+.pricing-col {
+  padding: 3% 2%;
+
+}
+
+
+
+
+
+
+h1 {
+  font-family: 'Montserrat-black';
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+
+}
+
+h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+p {
+  color: #8f8f8f
+}
+
+
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  color: #ffffff;
+  padding: 5% 15% 2%;
+
+}
+/* Footer Section */
+#footer {
+  padding: 5%;
+  text-align: center;
+}
+
+.footer-icons {
+  padding: 0 2%;
+}
+
+.footer-p {
+  margin-top: 20px;
+}
+
+
+
+
+/* Media Query Responsiveness */
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+    margin: 25px 0 0;
+  }
+
+  .press-img {
+    width: 10%;
+    margin: 20px 20px 50px;
+    text-align: center;
+
+}
+
+h1 {
+  line-height: 1.5;
+}
